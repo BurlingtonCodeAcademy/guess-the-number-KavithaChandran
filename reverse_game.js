@@ -1,5 +1,5 @@
 //Function to use verbage for async/await
-const { Console } = require('console');
+
 const readline = require('readline');
 const rl = readline.createInterface(process.stdin, process.stdout);
 
@@ -32,7 +32,7 @@ async function start() {
     let CompVariable = randomInteger(min, max)
     console.log('I thought of a number between '+min+'-'+max +  ' ,Now its your time to guess in ten chances....')
 
-    //console.log("I thought : " + CompVariable)
+   
     CompVariable = parseInt(CompVariable)
     let UserVariable = await ask(' What is your guess? ')
     let UserGuess = 1
